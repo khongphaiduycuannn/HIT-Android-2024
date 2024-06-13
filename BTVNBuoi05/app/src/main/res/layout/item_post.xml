@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#121212"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center|start">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/img_avatar" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:text="_khongphaiduycuannn"
+                android:textColor="#F9F9F9"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLocate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:text="Hoài Đức, Hà Nội"
+                android:textColor="#F9F9F9"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="1dp">
+
+        <ImageView
+            android:id="@+id/ivContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="7dp"
+        android:gravity="center|start">
+
+        <ImageButton
+            android:id="@+id/btnFavourite"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/transparent"
+            android:scaleX="1.15"
+            android:scaleY="1.15"
+            android:src="@drawable/ic_favourite" />
+
+        <ImageButton
+            android:id="@+id/btnComment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/transparent"
+            android:scaleX="1.15"
+            android:scaleY="1.15"
+            android:src="@drawable/ic_comment" />
+
+        <ImageButton
+            android:id="@+id/btnMessage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/transparent"
+            android:scaleX="1.15"
+            android:scaleY="1.15"
+            android:src="@drawable/ic_message" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnBookmark"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:scaleX="1.15"
+            android:scaleY="1.15"
+            android:src="@drawable/ic_bookmark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_avatar" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/liked_by"
+            android:textColor="#F9F9F9"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:textColor="#F9F9F9"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="12 people" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BTVNBuoi5</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="posts">Posts</string>
+    <string name="full_name">Duy Quan</string>
+    <string name="user_note">nguyen duy minh quan</string>
+    <string name="username">duycuan</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="new_story">New</string>
+    <string name="friends">Friends</string>
+    <string name="friendss">Friendss</string>
+    <string name="friendsss">Friendsss</string>
+    <string name="liked_by">Liked by</string>
+</resources>
